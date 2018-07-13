@@ -1,0 +1,87 @@
+#navbar{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: white;
+    .containerr{
+        width: 90%;
+        margin: 0 auto;
+        .col-md-1{
+            img{
+                width: 100%;
+                cursor: pointer
+            }
+        }
+        .col-md-9{
+            ul{
+                text-align: center;
+                margin-bottom: 0;
+                margin-top: 1%;
+                li{
+                    display: inline-block;
+                    text-align: center;
+                    padding-right: 5%;
+                    color: $mainColor;
+                    cursor: pointer;
+                    position: relative;
+                    transition: all 0.3s linear;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                      background-color: #EDEFF1;
+                      width: 1px;
+                      height: 50%;
+                      right: 19%;
+                      top: 26%;
+                    }
+
+                    &::before{
+                        position: absolute;;
+                        content: "";
+                        top: 0;
+                        right: 46%;
+                        padding: 3px;
+                        background: red;
+                        border-radius: 50%;
+                        opacity: 0;
+                        transition: all 0.3s linear;
+
+                    }
+                    &:hover::before{
+                        opacity: 1;;
+                    }
+                    &:hover{
+                        color: $secondColor;
+
+                    }
+                    p{
+                        margin-bottom: 0;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    
+                }
+            }
+        }
+
+        .col-md-2{
+            text-align: right;
+            button{
+                background: #2E95BB;
+                color: white;
+                border:none;
+                padding: 10px 30px;
+                font-size: 13px;
+              border-top-right-radius: 25px;
+              border-bottom-right-radius: 25px;
+              border-top-left-radius: 25px;
+              border-bottom-left-radius: 25px;
+              cursor: pointer;
+              margin-top: 7%;
+              outline: none;
+
+
+            }
+
+        }
+    }
+}

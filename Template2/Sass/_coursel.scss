@@ -1,0 +1,228 @@
+#coursel{
+
+    .item{
+        height: 550px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+        .post{
+            color: white;
+            position: absolute;
+            top: 25%;
+            left: 15%;
+            h1{
+                font-size: 70px;
+            }
+            .date{
+                position: relative;
+                span{
+                    display: inline-block;
+                }
+                .img{
+                    width: 50px;
+                    height: 50px;
+                    clip-path: circle(50% at 50% 50%);
+                    img{
+                        width: 100%;
+                        height: 100%;;
+                    }
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                    position: absolute;;
+                    top: 20%;
+                    left: 20%;
+                    
+                }
+                
+                
+            }
+            .hr{
+                margin-top: 8%;
+                margin-bottom: 12%;
+                width: 30%;
+                height: 3px;;
+                display: inline-block;
+                background-color: rgba(153, 147, 147, 0.8);
+            }
+            .likeCom{
+                a{
+                    display: inline-block;
+                    color: white;
+                    text-decoration: none;
+                    margin-right: 15%;
+                    span{
+                        padding: 15px;
+                        border:1px solid white;
+                        border-radius: 50%;
+                        &:hover{
+                            background: #F9735B;
+                        }
+                    }
+
+                }
+            }
+        }
+        .profile{
+            position: absolute;
+            right: 0;
+            width: 24.5%;
+            height: 100%;
+            padding: 2%;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            text-align: center;
+
+            .header{
+                position: relative;
+                padding: 5px;
+                &::after{
+                    position: absolute;
+                    content: "\f007";
+                    font-family: "fontAwesome";
+                    top: 2%;
+                    left: 0;
+                    color: white;
+                    font-size: 20px;
+                    
+                }
+
+                &::before{
+                    position: absolute;
+                    content: "\f00d";
+                    font-family: "fontAwesome";
+                    top: 2%;
+                    right: 0;
+                    color: white;
+                    font-size: 20px;
+                    cursor: pointer;
+                    
+                }
+            }
+            .img{
+                width: 110px;
+                height: 110px;;
+                border-radius: 50%;
+                border:2px solid white;
+                display: inline-block;
+                margin-top: 15%;
+
+                img{
+                    width: 100%;
+                    height: 100%;;
+                border-radius: 50%;
+
+                }
+            }
+
+            .info{
+                h3{
+                   font-weight: 400;
+                }
+                p{
+                    color: #C0BEBC;
+                }
+            }
+            hr{
+                background-color: rgba(94, 94, 94, 0.6);
+                padding: 1px;
+                margin-top: 12%;
+                margin-bottom: 12%;
+            }
+            .contribute{
+                text-align: left;
+                font-size: 14px;
+                font-weight: 500;
+                color: #C0BEBC;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: "\f105";
+                    font-family: "FontAwesome";
+                    top: 2%;
+                    right: 0;
+                    font-size: 20px;
+                    color: #C0BEBC;
+                    cursor: pointer;
+
+                }
+
+                &::before{
+                    position: absolute;
+                    content: "\f104";
+                    font-family: "FontAwesome";
+                    top: 2%;
+                    right: 10%;
+                    font-size: 20px;
+                    color: #C0BEBC;
+                    cursor: pointer;
+
+
+                }
+                &:hover::after{
+                    color:rgba(255, 255, 255,1)
+                }
+                &:hover::before{
+                    color:rgba(255, 255, 255,1)
+                }
+            }
+
+            .images{
+                margin-top: 10%;
+                .col-md-4{
+                    margin-bottom: 2%;
+                }
+                .imgg{
+                    height: 100%;
+                   
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        cursor: pointer;
+                        &:hover{
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+      
+
+        
+
+    }
+    .i1{
+        background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../Image/c1.jpg");
+    }
+    .i2{
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../Image/c2.jpg")
+    }
+    .i3{
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../Image/c3.jpg")
+    }
+
+    .blur{
+        position: absolute;
+        right: 0;
+        width: 30%;
+        height: 100%;
+        filter: blur(25px);
+        background:  rgba(255,255,255,0.2)
+    }
+
+    .owl-dots{
+        position: absolute;;
+        bottom: 5%;
+        left: 45%;
+        .active{
+         transform:scale(1.4)
+        }
+    }
+   
+   
+
+
+
+}
